@@ -111,7 +111,7 @@ cat << EOF | sudo tee -a /etc/apache2/sites-available/default.conf
 </VirtualHost>
 
 <VirtualHost *:80>
-  ServerName priemimas.local
+  ServerName webpage_name
   DocumentRoot "/var/www/html/webpage_name/public"
   <Directory "/var/www/html/webpage_name/public">
     AllowOverride all
