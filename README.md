@@ -30,6 +30,15 @@ If you want full GUI use this:
 config.vm.box = "igorbrites/ubuntu-trusty64-gui"
 config.vm.box_version = "0" 
 
+other wise use this one:
+
+config.vm.box = "ubuntu/trusty64"
+
+(Only on Windows) Resizing .vdi / .vdkm box:
+  1. ./VBoxManage clonehd "C:\Users\52829\.VirtualBox\www_64GUI_default_1539192605655_60052\box-disk1.vmdk" "C:\Users\52829\.VirtualBox\www_64GUI_default_1539192605655_60052\clone-disk1.vdi" --format vdi
+  2. ./VBoxManage modifyhd "clone-disk1.vdi" --resize size_of_mb
+  3. ./VBoxManage storageattach www_64GUI_default_1539192605655_60052 --storagectl "SATA" --port 0 --device 0 --type hdd --medium "C:\Users\52829\.VirtualBox\www_64GUI_default_1539192605655_60052\clone-disk1.vdi"
+
 
 
 
