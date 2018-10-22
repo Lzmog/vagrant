@@ -39,7 +39,6 @@ config.vm.box = "ubuntu/trusty64"
   2. ./VBoxManage modifyhd "clone-disk1.vdi" --resize size_of_mb
   3. ./VBoxManage storageattach www_64GUI_default_1539192605655_60052 --storagectl "SATA" --port 0 --device 0 --type hdd --medium "C:\Users\52829\.VirtualBox\www_64GUI_default_1539192605655_60052\clone-disk1.vdi"
 
-
-
+If you have some issues with installing osi-8 please do step by step from osi installation .
 
 I hope i helped you! :)
